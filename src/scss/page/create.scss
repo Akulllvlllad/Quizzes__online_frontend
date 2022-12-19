@@ -1,0 +1,83 @@
+.creating {
+	@apply z-10 bg-white p-4 flex flex-col gap-6 rounded-2xl overflow-y-auto relative pt-10;
+	max-width: 900px;
+	width: 90vw;
+	max-height: 99vh;
+	&__back {
+		@apply text-3xl cursor-pointer hover:opacity-70  absolute left-0 top-0 z-20;
+	}
+
+	&__dropzone{
+		@apply relative overflow-hidden rounded-3xl;
+		
+		padding-bottom: 56%;
+	}
+}
+
+.settings {
+	@apply grid h-24;
+
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 10px;
+	&__inputs {
+		grid-area: 1 / 1 / 2 / 5;
+	}
+	&__input {
+		@apply w-full p-3  border-none border-b-black;
+		&:first-child {
+			@apply mb-2;
+		}
+	}
+	&__button {
+		@apply cursor-pointer;
+	}
+}
+
+.create {
+	&__button {
+		@apply w-full flex items-center justify-center h-16 gap-3 text-4xl text-gray-500 border-none cursor-pointer rounded-lg;
+		span {
+			@apply text-xl;
+		}
+	}
+}
+
+.question {
+	@apply w-full py-3;
+	textarea {
+		@apply resize-none  text-base w-full p-4;
+		&:active,
+		&:hover,
+		&:focus {
+			outline: 0;
+			outline-offset: 0;
+		}
+	}
+}
+
+.options {
+	@apply flex flex-wrap;
+}
+
+.option {
+	@apply basis-1/2 flex justify-center p-5;
+
+	&__wrapper {
+		@apply basis-1/2 flex justify-center p-5 bg-cyan-600 h-52 rounded-2xl;
+
+		textarea {
+			@apply bg-inherit border-none resize-none text-white text-base;
+			&:active,
+			&:hover,
+			&:focus {
+				outline: 0;
+				outline-offset: 0;
+			}
+		}
+	}
+}
+
+.option__wrapper.active {
+	box-shadow: 0px 0px 40px 1px rgba(97, 246, 25, 1);
+}

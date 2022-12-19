@@ -1,0 +1,51 @@
+.root {
+	@apply flex  flex-col gap-2;
+}
+.item {
+	@apply  p-2 cursor-pointer rounded-xl bg-white;
+	border: #42B5A4 2px solid;
+	color: #42B5A4;
+	user-select:none;
+	transition: all 0.3s ease 0s;
+
+	&:hover{
+		transform: translate(0, -3px);
+	}
+	&:active{
+		transform: translate(2px, 10px);
+	}
+	
+}
+.text {
+	@apply  rounded-xl px-2 text-center py-4;
+	
+	span {
+		@apply  text-center text-inherit font-bold;
+		
+	}
+}
+
+
+
+.item.current{
+	background-color: #42B5A4;
+	color: white;
+}
+
+.item.error{
+	border-color: #b54242;
+	background-color: #b54242;
+	color: white;
+}
+
+.item.true{
+	border-color: #10850c;
+	background-color: #10850c;
+	color: white;
+}
+
+.item.errorAll{
+	border-color: #b54242;
+	background-color: #b54242;
+	color: white;
+}

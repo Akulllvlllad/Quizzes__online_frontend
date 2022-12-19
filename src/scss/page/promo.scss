@@ -1,0 +1,9 @@
+.Promo{
+	@apply min-h-full w-full overflow-y-auto py-4;
+	&__container{
+		@apply max-w-4xl mx-auto;
+	}
+	&__inner{
+		@apply w-full   flex flex-col gap-10;
+	}
+}

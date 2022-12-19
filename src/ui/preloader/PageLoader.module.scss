@@ -1,0 +1,16 @@
+.root {
+	@apply flex justify-center items-center h-screen px-1;
+}
+
+.wrapper {
+	@apply z-10  p-4 flex flex-col gap-6 rounded-2xl justify-center items-center relative;
+	background-color: #312e2ce0;
+	max-width: 900px;
+	width: 100vw;
+	height: 99vh;
+}
+
+
+.toBack{
+	@apply absolute left-2 top-2 text-white text-5xl cursor-pointer hover:opacity-80;
+}

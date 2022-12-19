@@ -1,0 +1,35 @@
+.CreateRoom{
+	@apply h-full w-full pt-3 px-5;
+	&__container{
+		@apply  mx-auto h-full w-full;
+		max-width: 800px;
+	}
+	&__inner{
+		@apply bg-white h-full w-full p-3;
+		border-radius: 15px 15px 0 0;
+		box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	}
+}
+
+.Creating{
+	@apply p-3;
+}
+
+.searching{
+	@apply py-3 relative;
+	&__input{
+		
+		input{
+			@apply px-5 py-3;
+		}
+	}
+	&__list{
+		@apply absolute bg-white w-full list-none top-14 rounded-xl   p-3;
+		border: 2px solid #42B5A4;
+	}
+	&__item{
+		@apply cursor-pointer w-full p-3 rounded-lg font-bold;
+		background-color: #42b5a442;
+		color: #42B5A4;
+	}
+}

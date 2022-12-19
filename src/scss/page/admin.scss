@@ -1,0 +1,26 @@
+.admin{
+	@apply z-10 bg-white p-4 flex flex-col gap-6 rounded-2xl overflow-y-auto;
+	max-width: 900px;
+	width: 90vw;
+	height: 90vh;
+}
+
+
+
+.make-quiz{
+
+
+	&__button{
+		@apply p-4 rounded-2xl cursor-pointer border-none w-full;
+		transition: all 0.3s linear 0s;
+		background-color: #dbf1ee96;
+		color: #42B5A4;
+		&:hover{
+			background-color: #42B5A4 ;
+		color: #ffffff;
+		}
+	}
+	&__icon{
+		@apply text-4xl;
+	}
+}

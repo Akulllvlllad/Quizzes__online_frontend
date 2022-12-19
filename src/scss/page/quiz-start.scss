@@ -1,0 +1,6 @@
+.quiz-start {
+	@apply z-10 bg-white p-4 flex flex-col gap-6 rounded-2xl overflow-y-auto;
+	max-width: 900px;
+	width: 90vw;
+	height: 90vh;
+}

@@ -1,0 +1,16 @@
+
+.root{
+	@apply bg-white p-3 rounded-2xl ;
+}
+.title{
+	@apply mb-5;
+}
+.item{
+	.img{
+		@apply relative w-full overflow-hidden;
+		padding-bottom: 65%;
+		img{
+			@apply absolute w-full h-full object-cover;
+		}
+	}
+}

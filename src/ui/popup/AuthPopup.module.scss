@@ -1,0 +1,15 @@
+.modalWrapper{
+	@apply flex justify-center items-center left-0 top-0 fixed ;
+	background-color: rgba(0, 0, 0, 0.137) ;
+	
+	width: 100vw;
+	height: 100vh;
+	
+	
+}
+
+
+.modal{
+	@apply p-2 bg-white rounded-xl flex flex-col gap-3;
+	
+}

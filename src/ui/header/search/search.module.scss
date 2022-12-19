@@ -1,0 +1,33 @@
+.root {
+	@apply z-20 bg-white w-full absolute top-14 rounded-2xl p-2;
+
+	border: 2px solid #42b5a4;
+}
+
+.notFount {
+	@apply w-full  flex justify-center items-center h-28 text-gray-600 font-bold;
+}
+
+.grid {
+	@apply w-full;
+	display: grid;
+	
+	grid-template-columns:  repeat(auto-fit, minmax(200px, 0.25fr));
+	
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+}
+
+.img{
+	@apply relative;
+	padding-bottom: 67%;
+	img{
+		@apply absolute w-full h-full left-0 top-0 object-cover;
+	}
+}
+
+.item{
+	@apply flex flex-col gap-2 p-3 rounded-lg;
+	color: #42b5a4;
+	background-color: #42b5a41f;
+}

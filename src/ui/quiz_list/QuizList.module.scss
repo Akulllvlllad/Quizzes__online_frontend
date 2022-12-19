@@ -1,0 +1,55 @@
+.root {
+	@apply z-10 bg-white  gap-6  overflow-y-auto ;
+	max-width: 900px;
+	margin: 0 auto;
+	max-width: 800px;
+	height: 100%;
+}
+
+
+.question{
+	@apply rounded-xl flex items-center justify-center relative;
+	color: #46312A;
+	background-color: #FFE388;
+	height: 46%;
+	
+}
+
+
+.counter{
+	@apply absolute top-0 left-1/2 bg-white px-5 py-2 font-bold rounded-md;
+	color: #42B5A4;
+	transform: translate(-50%, -50%,)
+}
+
+
+
+
+
+
+
+
+.timer{
+	@apply text-white flex flex-col items-center;
+	.icon{
+		@apply text-3xl;
+	}
+}
+
+.answers{
+	
+}
+.header{
+	@apply  p-2;
+	background-color: #42B5A4;
+
+}
+.body{
+	@apply p-4 flex flex-col justify-between pt-10 overflow-y-auto;
+	height: 90%;
+}
+
+.item{
+	@apply  flex flex-col justify-between ;
+	height: 100%;
+}

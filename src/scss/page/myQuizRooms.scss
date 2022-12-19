@@ -1,0 +1,35 @@
+.MyQuizRooms {
+	@apply w-full h-full;
+	&__container {
+		@apply px-1 mx-auto max-w-sm h-full w-full pt-4;
+	}
+	&__inner {
+		@apply w-full h-full bg-white rounded-t-2xl;
+	}
+}
+
+
+.rooms{
+	@apply p-2;
+	&__title{
+		@apply text-center;
+	}
+	&__list{
+		@apply list-none;
+		a{
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+	&__item{
+		@apply w-full p-2;
+		background-color: #F2F2F2;
+	}
+	&__img{
+		@apply relative overflow-hidden rounded-xl;
+		padding-bottom: 56%;
+		img{
+			@apply absolute w-full h-full left-0 top-0 object-cover;
+		}
+	}
+}

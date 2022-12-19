@@ -1,0 +1,16 @@
+.root{
+	@apply w-full h-full flex flex-col justify-between;
+}
+
+.btn{
+	@apply w-full p-2 font-bold rounded-lg font-bold cursor-pointer  opacity-90 hover:opacity-100 active:opacity-95 mb-2;
+	border: none;
+	background-color: rgba(251, 146, 60, 0.603);
+	color: #42b5a4;
+
+}
+.text{
+	@apply p-2 mb-2 rounded-xl font-bold text-center;
+	background-color: #42b5a43d;
+	color: #42b5a4;
+}

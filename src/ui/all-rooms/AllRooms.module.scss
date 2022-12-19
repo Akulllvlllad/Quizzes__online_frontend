@@ -1,0 +1,19 @@
+
+.root{
+	@apply bg-white p-3 rounded-2xl ;
+}
+.title{
+	@apply mb-5;
+}
+.item{
+	.roomImg{
+		@apply relative w-full overflow-hidden rounded-xl;
+		border: 3px solid #42B5A4;
+		padding-bottom: 65%;
+		.item{
+			@apply absolute w-3/4 h-3/4 left-1/2 top-1/2;
+			transform: translate(-50%, -50%);
+			color: #42B5A4;
+		}
+	}
+}

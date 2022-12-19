@@ -1,0 +1,36 @@
+.root {
+	@apply h-full flex flex-col gap-5;
+}
+.title {
+	color: #42b5a4;
+}
+.img {
+	@apply overflow-hidden w-full relative rounded-lg py-3;
+	padding-bottom: 56%;
+	box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 1);
+	img {
+		@apply absolute object-cover w-full h-full left-0 top-0;
+	}
+}
+
+
+
+.line {
+	@apply w-full bg-white;
+
+	height: 1px;
+}
+
+.table {
+	@apply w-full;
+
+	th {
+		@apply pb-3;
+		color: #42b5a4;
+	}
+
+	td {
+		@apply text-center   pb-1;
+		color: #42B5A4;
+	}
+}

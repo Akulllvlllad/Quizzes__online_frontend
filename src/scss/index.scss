@@ -1,0 +1,20 @@
+@import './page/main.scss';
+@import './page/room.scss';
+@import './page/create.scss';
+@import './page/admin.scss';
+@import './page/quiz-test.scss';
+@import './page/quiz-start.scss';
+@import './page/navigate.scss';
+@import './page/roomForPlayers.scss';
+@import './page/myQuizRooms.scss';
+@import './page/promo.scss';
+@import './page/createRoom.scss';
+*{
+	@apply m-0 p-0 box-border;
+	
+}
+.App{
+	@apply  min-h-screen bg-slate-600 relative;
+	
+
+}

@@ -1,0 +1,52 @@
+.root{
+	@apply flex flex-col gap-6 mb-8 overflow-y-auto p-3 relative;
+	max-width: 400px;
+}
+
+.fields{
+	@apply flex flex-col gap-2;
+}
+
+.field{
+	@apply w-80 w-full;
+	
+	input{
+		@apply py-2 w-full px-5 rounded-3xl font-bold;
+		
+		background-color: #F2F2F2;
+		border: none;
+		box-shadow: 0px 0px 4px 0px rgba(34, 60, 80, 0.2) inset;
+		&:active,
+			&:hover,
+			&:focus {
+				outline: 0;
+				outline-offset: 0;
+				box-shadow: 0px 0px 0px 2px #42b5a4;
+			}
+	}
+}
+
+.title{
+	@apply text-center w-full;
+	
+}
+
+
+.submit{
+	@apply w-full p-2 font-bold border-none rounded-xl cursor-pointer;
+	color: #42b4a5;
+	background-color: #42b4a52f;
+}
+
+
+.warning{
+	@apply text-yellow-500 font-bold text-xs;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+.error{
+	@apply text-red-600 text-sm font-bold ;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
